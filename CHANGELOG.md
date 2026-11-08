@@ -1,5 +1,12 @@
 # @jsdevlab/react-headless
 
+## 1.1.1
+
+### Patch Changes
+
+- [`2beb4fe`](https://github.com/jsdevlab/react-headless/commit/2beb4fe323f70ae0c9876d2da3228171d3627713) Thanks [@hushink](https://github.com/hushink)! - Update the development test environment to `happy-dom` 21.0.4 to address
+  security advisories in earlier versions.
+
 ## 1.1.0
 
 ### Minor Changes
