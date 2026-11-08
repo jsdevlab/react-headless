@@ -1,2 +1,9 @@
 allowBuilds:
   simple-git-hooks: true
+
+# @rstest/core@0.12.6 only declares a ^20.8.3 peer range, but versions below
+# 21.0.4 have security advisories. happy-dom 21.0.4 is verified against the
+# full test suite, so allow it explicitly.
+peerDependencyRules:
+  allowedVersions:
+    "@rstest/core>happy-dom": ">=21.0.4"

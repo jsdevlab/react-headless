@@ -102,7 +102,8 @@ RSC 安全（禁止加 Hook 或 `'use client'`）：
 - `tsconfig.json` 的 `exclude` 必须排除测试，避免测试进入 `dist`
 - 构建后确认 `dist` 无测试文件，且 `Await` / `Catch` / `Portal` 产物保留 `'use client'`
 - `react` 与 `react-dom` 都是 peerDependency，Portal 使用 `react-dom`
-- `@testing-library/jest-dom` 固定 6.x；`happy-dom` 固定 20.x（Rstest peer 约束）
+- `@testing-library/jest-dom` 固定 6.x
+- `happy-dom` 固定 `21.0.4`（低于该版本有安全漏洞）。`@rstest/core@0.12.6` 仍声明 `^20.8.3` peer，已在 `pnpm-workspace.yaml` 的 `peerDependencyRules.allowedVersions` 中显式放行，110 个测试验证通过
 - TypeScript 保持 `^6.0.3`，不要升级到 7（IDE 暂不支持 tsgo 补全）
 
 ## 文档与发布
