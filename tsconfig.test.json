@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "include": ["src", "rslib.config.ts", "rstest.config.ts", "rstest.setup.ts"],
+  "exclude": []
+}
